@@ -9,28 +9,20 @@ void FCFS(int arr[], int head)
     for (i = 0; i < size; i++)
     
         cur_track = arr[i];
-        // calculate absolute distance
         distance = cur_track - head;
-        // increase the total count
         seek_count += distance;
-        // accessed track is now new head
         head = cur_track;
     
 
     printf("Total number of seek operations = %d", seek_count);
-    // Seek sequence would be the same
-    // as request array sequence
     printf("\n\nSeek Sequence is\n");
     for (i = 0; i < size; i++)
     {
         printf("%d\n", arr[i]);
     }
 }
-
-// Driver code
 int main()
 {
-    // request array
     int arr[size] = {176, 79, 34, 60, 92, 11, 41, 114};
     int head = 50;
     FCFS(arr, head);
