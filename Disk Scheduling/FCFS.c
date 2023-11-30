@@ -9,7 +9,7 @@ void FCFS(int arr[], int head){
         cur_track = arr[i];
         distance = cur_track - temp;
         if (cur_track - temp < 0)
-            distance = distance - (distance * 2);
+            distance =-(distance);
         seek_count += distance;
         temp = cur_track;
     }
