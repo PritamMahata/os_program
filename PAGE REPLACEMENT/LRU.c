@@ -1,4 +1,7 @@
+// this is wrong code don't write
+// this is wrong code don't write
 #include <stdio.h> 
+// this is wrong code don't write
 int main(){
     int q[20], p[50], c = 0, c1, d, f, i, j, k = 0, n, r, t, b[20], c2[20];
     printf("Enter no of pages:");

@@ -1,12 +1,14 @@
+// CPU scheduling
 #include <stdio.h>
 int main(){
-    int i, NOP, sum = 0, count = 0, y, quant, wt = 0, tat = 0, at[10], bt[10], temp[10];
+    int i, NOP, sum = 0, count = 0, y, quant;
+    int wt = 0, tat = 0, at[10], bt[10], temp[10];
     float avg_wt, avg_tat;
     printf(" Total number of process in the system: ");
     scanf("%d", &NOP);
     y = NOP;
     for (i = 0; i < NOP; i++){
-        printf("\n Enter the Arrival and Burst time of the Process[%d]\n", i + 1);
+        printf("\nEnter the Arrival and Burst time of the Process[%d]\n", i + 1);
         printf(" Arrival time is: \t");
         scanf("%d", &at[i]);
         printf(" \nBurst time is: \t");
@@ -28,7 +30,8 @@ int main(){
         }
         if (temp[i] == 0 && count == 1){
             y--;
-            printf("\nProcess No[%d] \t\t %d\t\t\t %d\t\t\t %d", i + 1, bt[i], sum - at[i], sum - at[i] - bt[i]);
+            printf("\nProcess No[%d] \t\t %d\t\t\t %d\t\t\t %d",
+             i + 1, bt[i], sum - at[i], sum - at[i] - bt[i]);
             wt = wt + sum - at[i] - bt[i];
             tat = tat + sum - at[i];
             count = 0;
