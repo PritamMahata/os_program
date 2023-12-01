@@ -1,6 +1,5 @@
 #include <stdio.h> 
-int main()
-{
+int main(){
     int q[20], p[50], c = 0, c1, d, f, i, j, k = 0, n, r, t, b[20], c2[20];
     printf("Enter no of pages:");
     scanf("%d", &n);
@@ -13,16 +12,13 @@ int main()
     printf("\n\t%d\n", q[k]);
     c++;
     k++;
-    for (i = 1; i < n; i++)
-    {
+    for (i = 1; i < n; i++){
         c1 = 0;
-        for (j = 0; j < f; j++)
-        {
+        for (j = 0; j < f; j++){
             if (p[i] != q[j])
                 c1++;
         }
-        if (c1 == f)
-        {
+        if (c1 == f){
             c++;
             if (k < f)
             {

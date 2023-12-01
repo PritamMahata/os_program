@@ -26,7 +26,6 @@ int main(){
             temp[i] = temp[i] - quant;
             sum = sum + quant;
         }
-
         if (temp[i] == 0 && count == 1){
             y--;
             printf("\nProcess No[%d] \t\t %d\t\t\t %d\t\t\t %d", i + 1, bt[i], sum - at[i], sum - at[i] - bt[i]);
